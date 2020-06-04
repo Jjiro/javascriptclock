@@ -111,3 +111,12 @@ body {
   height: 35%;
   background-color: whitesmoke;
 }
+
+#date {
+  z-index: 9;
+  color: hsl(120, 100%, 50%);
+  position: absolute;
+  bottom: 20%;
+  font-weight: bold;
+  font-size: larger;
+}

@@ -18,4 +18,11 @@ function setRotation(element, rotationRatio) {
   element.style.setProperty('--rotation', rotationRatio * 360);
 }
 
+function init() {
+  var date = new Date();
+  var options = { day: 'numeric', month: 'long', year: 'numeric' };
+  document.querySelector('#date').innerHTML = date.toLocaleString('en-GB', options);
+}
+window.onload = init;
+
 setClock();
