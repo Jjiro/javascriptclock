@@ -13,8 +13,8 @@ function setClock() {
   setRotation(minuteHand, minutesRatio);
   setRotation(hourHand, hoursRatio);
   // Add sound effect
-  var clickSound = new Audio();
-  clickSound.src = 'Mouse-Click.mp3';
+  let clickSound = new Audio();
+  clickSound.src = 'clickSound.mp3';
   clickSound.play();
 }
 
