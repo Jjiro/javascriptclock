@@ -12,6 +12,10 @@ function setClock() {
   setRotation(secondHand, secondsRatio);
   setRotation(minuteHand, minutesRatio);
   setRotation(hourHand, hoursRatio);
+  // Add sound effect
+  var clickSound = new Audio();
+  clickSound.src = 'Mouse-Click.mp3';
+  clickSound.play();
 }
 
 function setRotation(element, rotationRatio) {
@@ -21,7 +25,7 @@ function setRotation(element, rotationRatio) {
 function init() {
   var date = new Date();
   var options = { day: 'numeric', month: 'long', year: 'numeric' };
-  document.querySelector('#date').innerHTML = date.toLocaleString('en-GB', options);
+  document.querySelector('#date').innerHTML = date.toLocaleString('en-US', options);
 }
 window.onload = init;
 
